@@ -1,12 +1,14 @@
-#include<studio.h>
+#include<stdio.h>
 int main(){
-    int no;
-    printf("\n Enter a number to check its divisibility :-");
+    int no,i;
+    printf("\n Enter number you want to check the divisiblity with:- ");
+    scanf("%d",&i);
+    printf("\n Enter a number to check its divisibility :- ");
     scanf("%d",&no);
-    if(no%7==0){
-        printf("\nnumber is divisible by 7");
+    if(no%i==0){
+        printf("\n%d is divisible by %d",no,i);
     }
     else{
-        printf("\n Nymber is not divisible by 7");
-    }
+        printf("\n%d is not divisible by %d",no,i);
+        }
 }
